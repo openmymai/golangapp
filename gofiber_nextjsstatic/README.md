@@ -19,13 +19,15 @@ $ git clone https://github.com/openmymai/gofiber_nextjsstatic.git
 ## Usage
 
 From the repository root directory, generate the static HTML export of the Next.js
-app, and build the Go binary:
+app (dist folder in nextjs), and build the Go binary:
 
 ```sh
 $ cd nextjs
 $ yarn install
 $ yarn run export
 $ cd ..
+$ go mod init
+$ go mod tidy
 $ go build main.go
 ```
 
