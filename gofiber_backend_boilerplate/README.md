@@ -21,13 +21,13 @@ Running and Developing locally
 cp src/.env.example src/.env
 ```
 
-1.  Download Swag for generating docs
+2.  Download Swag for generating docs
 
 ```source-shell
 go get -u github.com/swaggo/swag/cmd/swag
 ```
 
-1.  Run
+3.  Run
 
 -   NOTE: You have to generate swagger docs before running the app.
 
@@ -54,13 +54,13 @@ docker-compose --env-file ./src/.env down      # docker-compose down (Shutdown A
 cp src/.env.example src/.env
 ```
 
-1.  Update your `.env` variables for production
+2.  Update your `.env` variables for production
 
 -   Point to your prod database
 -   Update JWT issuer, secret key , blah blah
 -   Basically just follow good production practice
 
-1.  Download Swag for generating docs
+3.  Download Swag for generating docs
 
 ```source-shell
 go get -u github.com/swaggo/swag/cmd/swag
@@ -72,7 +72,7 @@ go get -u github.com/swaggo/swag/cmd/swag
 swag init -g src/api/app.go --output ./src/api/docs # Generates Swagger
 ```
 
-1.  Build Your Image
+4.  Build Your Image
 
 -   Permission the build script to run.
 
